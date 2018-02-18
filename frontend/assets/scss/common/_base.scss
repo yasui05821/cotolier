@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700');
+
+:root{
+  font-size: 10px;
+}
+
+::selection {
+  background: rgba(169, 235, 194, 0.1);
+}
+
+html {
+  body {
+    background: $clr-main;
+    text-align: center;
+    color: #8a8988;
+    font-size: 1.5rem;
+    line-height: 1.7;
+  }
+}
+a {
+  text-decoration: none;
+  color: #47cfa8;
+  &:hover {
+    color: rgba(169, 235, 194, 0.5);
+  }
+}

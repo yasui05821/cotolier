@@ -1,0 +1,25 @@
+//mediaQuery
+@mixin tablet(){
+  @media(min-width: 640px){
+    @content
+  }
+}
+
+@mixin desktop(){
+  @media(min-width: 786px){
+    @content
+  }
+}
+
+//container
+@mixin container(){
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  @include desktop {
+    max-width: 980px;
+    padding: 0;
+  }
+}

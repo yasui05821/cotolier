@@ -1,6 +1,41 @@
-doctype html
-html(lang="ja")
-    head
-        link(rel="stylesheet" type="text/css" href="/css/style.css")
-    body
-        p hoge
+extends ./common/_layout.pug
+
+block content
+    .c-wrap
+        h1.c-title cotolier
+        section#info.info
+            .c-contaier
+                //-.info-heading
+                    h2 現在準備中です。
+                    span すみません、もうしばらくお待ち下さい。
+                .info-contents
+                    .info-prof
+                        .info-prof_thumb
+                        h2.info-prof_name Yasui Risa
+                        span.info-prof_penName illustPenName 絹雪
+                        p.info-prof_description
+                            |Web制作会社にてデザイナー、兼フロントエンドエンジニアとして働いています。
+                            |デザイン・Web制作だけでなく、大学で得たイラストを描く力や印刷物制作の知識を活かし、
+                            |デザイン・Web制作・イラスト制作の３つの分野で活動しています。
+                            br
+                            br
+                            |綺麗なものだけでなく、ユーザ気持ちの導線を設計できるデザイナーでありたいと思っています。
+                            |「いいな」と感じてもらえる気持ちを通して、優しく心を動かすようなモノづくりをしていきたいなと考えています。
+                        .info-prof_tools
+                            h3.info-prof_toolHeading Tools used
+                            span.info-prof_toolList Photoshop/Illustrator/XD/Sketch/clipStudio/HTML,pug/CSS,scss/gulp/jQuert/vue.js/Git
+                        //- p.info-prof_form
+                            | お仕事のご相談は下記フォームよりご連絡下さい。
+                        .info-prof_sns
+                            h3.info-prof_snsHeading SNS
+                            span.info-prof_snsIntro フォローなどお気軽にどうぞ。まだまだ日々勉強中ですが色々な方と情報交換等できると嬉しいです。
+                            .info-prof_snsList
+                                ul
+                                    li
+                                        a(href="https://twitter.com/cotolier_risa" target="_blank")
+                                            i.fa.fa-twitter
+                                    li
+                                        a(href="https://www.facebook.com/cotolierRisa" target="_blank")
+                                            i.fa.fa-facebook
+                                    li
+                                        a(href="https://qiita.com/cotolier_risa" target="_blank") Qiita
