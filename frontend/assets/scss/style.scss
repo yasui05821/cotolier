@@ -9,8 +9,43 @@
   text-align: center;
   padding: 50px 20px 80px;
   box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
   @include desktop {
-    padding: 50px 0 80px;
+    padding: 50px 0 200px;
+  }
+  &::before {
+    content: "";
+    width: 40%;
+    height: 100%;
+    background: url(/img/bg_flower.png) top center no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -130px;
+    left: 0;
+    @include desktop {
+      width: 20%;
+      height: 100%;
+      top:-10%;
+      left: 16%;
+    }
+
+  }
+  &::after {
+    content: "";
+    width: 80%;
+    height: 100%;
+    background: url(/img/bg_flower.png) top center no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: -20px;
+    right: -60px;
+    transform: rotateZ(180deg);
+    @include desktop {
+      width: 20%;
+      bottom: -18%;
+      right: 16%;
+    }
   }
 }
 
@@ -19,8 +54,27 @@
   color: #fff;
   text-align: center;
   font-family: 'Comfortaa', cursive;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   letter-spacing: 4px;
+  position: relative;
+  @include desktop {
+    margin-bottom: 40px;
+  }
+  &::after {
+    display: inline-block;
+    content: "";
+    width: 310px;
+    height: 190px;
+    background: url(/img/littleBird.png) top center no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: -25%;
+    top: -90px;
+    z-index: -10;
+    @include desktop {
+      display: none;
+    }
+  }
 }
 
 .c-contaier {
@@ -35,10 +89,32 @@
   max-width: 100%;
   background: #fff;
   box-sizing: border-box;
+  z-index: 100;
+  position: relative;
   @include desktop {
     padding: 60px 100px;
     max-width: 600px;
     min-width: 400px;
+    z-index: 0;
+    position: static;
+  }
+
+  &::after {
+    display: none;
+
+    @include desktop {
+      display: inline-block;
+      content: "";
+      width: 380px;
+      height: 230px;
+      background: url(/img/littleBird.png) top center no-repeat;
+      background-size: contain;
+      position: absolute;
+      right: 50%;
+      bottom: 60px;
+      z-index: 10;
+      transform: rotateY(180deg);
+    }
   }
 
   & &-heading {
@@ -99,7 +175,8 @@
     font-weight: bold;
   }
   & &-prof_snsIntro {
-    display: inline-block;
+    display: block;
+    text-align: center;
     font-size: 1.3rem;
     margin-bottom: 20px;
   }
