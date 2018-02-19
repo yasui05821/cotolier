@@ -38,7 +38,7 @@
     background: url(/img/bg_flower.png) top center no-repeat;
     background-size: contain;
     position: absolute;
-    bottom: -20px;
+    bottom: -30px;
     right: -60px;
     transform: rotateZ(180deg);
     @include desktop {
@@ -133,16 +133,20 @@
   }
   & &-prof_penName {
     display: inline-block;
-    margin-bottom: .5em;
+    margin-bottom: 1em;
     font-size: 1.4rem;
   }
   & &-prof_thumb {
     display: inline-block;
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     border-radius: 100%;
     background: url("/img/icon.jpg") center no-repeat;
     background-size: cover;
+    @include desktop {
+      width: 180px;
+      height: 180px;
+    }
   }
   & &-prof_description {
     margin-bottom: 40px;
