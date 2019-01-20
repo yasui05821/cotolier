@@ -57,6 +57,8 @@
   font-size: 2.8rem;
   letter-spacing: 4px;
   position: relative;
+  text-shadow: 1px 1px 5px rgba(0,0,0,.2);
+
   @include desktop {
     margin-bottom: 40px;
   }
